@@ -1,0 +1,55 @@
+h1 {
+    text-align: center;
+}
+.wrapper {
+    max-width: 1200px;
+    padding: 0 16px;
+    margin: auto;
+}
+
+.navbar {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #008cba;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .create {
+    color: #008cba;
+    font-size: 1rem;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-self: center;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.navbar-brand:hover, .create:hover {
+    color: #fff;
+}
+
+.form-container {
+    width: 400px;
+    margin: 20px auto;
+}
+
+.note-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.title{
+    align-self: center;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
