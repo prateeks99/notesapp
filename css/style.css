@@ -1,6 +1,40 @@
 h1 {
     text-align: center;
 }
+body {
+    border: 50px solid #000066;
+    background: #fff;
+}
+
+.cardwrapper{
+    width: 600px;
+    padding: 0 16px;
+    margin: auto;
+    position: relative;
+}
+.verticallycentered{
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.footer {
+    position: fixed;
+    padding: 20px;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    background-color: #000066;
+    color: white;
+    text-align: center;
+}
+.centerwrap{
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+}
 .wrapper {
     max-width: 1200px;
     padding: 0 16px;
@@ -9,15 +43,15 @@ h1 {
 
 .navbar {
     padding: 20px;
-    margin-bottom: 20px;
-    background: #008cba;
+    margin-bottom: 0px;
+    background: #000066;
     color: #fff;
     display: flex;
     justify-content: space-between;
 }
 
 .navbar .create {
-    color: #008cba;
+    color: #000066;
     font-size: 1rem;
 }
 
@@ -39,6 +73,7 @@ h1 {
 }
 
 .note-container {
+ 
     text-align: center;
     margin-top: 20px;
 }
