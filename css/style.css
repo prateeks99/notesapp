@@ -2,7 +2,7 @@ h1 {
     text-align: center;
 }
 body {
-    border: 50px solid #000066;
+    border: 50px solid #008cba;
     background: #fff;
 }
 
@@ -26,7 +26,7 @@ body {
     left: 0;
     bottom: 10px;
     width: 100%;
-    background-color: #000066;
+    background-color: #008cba;
     color: white;
     text-align: center;
 }
@@ -44,14 +44,14 @@ body {
 .navbar {
     padding: 20px;
     margin-bottom: 0px;
-    background: #000066;
+    background: #008cba;
     color: #fff;
     display: flex;
     justify-content: space-between;
 }
 
 .navbar .create {
-    color: #000066;
+    color: #008cba;
     font-size: 1rem;
 }
 
