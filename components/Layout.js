@@ -5,7 +5,7 @@ import NavBar from './NavBar';
 const Layout = ({ children }) => (
     <>
         <head>
-            <title>Notes-App</title>
+            <title>Post-it!</title>
         </head>
         <NavBar />
         {children}
