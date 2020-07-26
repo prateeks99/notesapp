@@ -71,7 +71,7 @@ const Note = ({ note }) => {
 }
 
 Note.getInitialProps = async ({ query: { id } }) => {
-    const res = await fetch(`http://post-it-prateeks99.vercel.app/api/notes/${id}`);
+    const res = await fetch(`https://postit-taupe.vercel.app/api/notes/${id}`);
     const { data } = await res.json();
 
     return { note: data }
