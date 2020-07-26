@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-unfetch';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { Confirm, Button, Loader } from 'semantic-ui-react';
+import { Confirm, Button, Loader, Card } from 'semantic-ui-react';
 
 const Note = ({ note }) => {
     const [confirm, setConfirm] = useState(false);
@@ -21,7 +21,7 @@ const Note = ({ note }) => {
     const deleteNote = async () => {
         const noteId = router.query.id;
         try {
-            const deleted = await fetch(`http://localhost:3000/api/notes/${noteId}`, {
+            const deleted = await fetch(`https://postit-taupe.vercel.app/api/notes/${noteId}`, {
                 method: "Delete"
             });
 
@@ -42,9 +42,23 @@ const Note = ({ note }) => {
                 ? <Loader active />
                 :
                 <>
-                    <h1>{note.title}</h1>
+                <div>
+                    <div className="verticallycentered">
+                    <div className="cardwrapper">
+                    <Card fluid centered>
+                    <Card.Content>
+                    <Card.Header>
+                        <h1>{note.title}</h1>
+                    </Card.Header>
+                    </Card.Content>
+                    <Card.Content>
                     <p>{note.description}</p>
+                    </Card.Content>
                     <Button color='red' onClick={open}>Delete</Button>
+                    </Card>
+                    </div>
+                    </div>
+                </div>
                 </>
             }
             <Confirm
@@ -57,7 +71,7 @@ const Note = ({ note }) => {
 }
 
 Note.getInitialProps = async ({ query: { id } }) => {
-    const res = await fetch(`http://localhost:3000/api/notes/${id}`);
+    const res = await fetch(`http://post-it-prateeks99.vercel.app/api/notes/${id}`);
     const { data } = await res.json();
 
     return { note: data }
